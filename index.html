@@ -8,18 +8,22 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide-core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/themes/splide-skyblue.min.css">
 </head>
 <body>
     <header>
-        <img src="./img/logoyellow.jpeg" alt="Kings Trading" class="nav-logo">
-        <h1 class="logo-title">Kings Trading</h1>
+        <img src="./img/logofull.png" alt="Bull Education Trading" class="nav-logo">
+        <h1 class="logo-title">Bull Education Trader</h1>
     </header>
     <section class="hero">
         <div class="container vertical hero-container">
             <br><br>
             <div class="container horizontal">
-                <div class="container-left">
-                    <h1 class="hero-heading">Welcome to<br>Kings Trading</h1>
+                <div class="container-left hero-left">
+                    <h1 class="hero-heading">Welcome to<br>Bull Education Trader</h1>
                     <br>
                     <div class="hero-desc">
                         <p>Struggling to make profits from the market?<br>
@@ -60,7 +64,7 @@
         <br><br>
     </section>
     <section class="section features">
-        <h1 class="section-heading" data-aos="fade-up" style="color: #000;">Why Choose Us?</h1>
+        <h1 class="section-heading" data-aos="fade-up">Why Choose Us?</h1>
         <div class="container horizontal features-container">
             <div class="features-item" data-aos="slide-up">
                 <img src="./img/aim.png" alt="Accurate" class="features-item--img">
@@ -104,16 +108,52 @@
         </div>
     </section>
     <section class="section gallery">
-        <br><br>
-        <h1 class="section-heading">Don't take our word for it.<br>See the results!</h1>
-        <br><br>
-        <div class="container gallery-container" id="gallery-container">
-            <img src="./img/ss1.jpeg" class="gallery-img" data-aos="slide-up">
-            <img src="./img/ss2.jpeg" class="gallery-img" data-aos="slide-up">
-            <img src="./img/ss3.jpeg" class="gallery-img" data-aos="slide-up">
-            <img src="./img/ss4.jpeg" class="gallery-img" data-aos="slide-up">
-            <img src="./img/ss5.jpeg" class="gallery-img" data-aos="slide-up">
-        </div>
+        <h1 class="section-heading">Results Prove Our Words!</h1>
+        <br><br><br>
+        <!-- <div class="container gallery-container" id="gallery-container"> -->
+            <div class="splide2">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="./img/ss1.jpeg" class="gallery-img">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./img/ss2.jpeg" class="gallery-img">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./img/ss3.jpeg" class="gallery-img">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./img/ss4.jpeg" class="gallery-img">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./img/ss5.jpeg" class="gallery-img">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./img/ss6.jpeg" class="gallery-img">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./img/ss7.jpeg" class="gallery-img">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./img/ss8.jpeg" class="gallery-img">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./img/ss9.jpeg" class="gallery-img">
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        <h3><</h3>
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                        <h3>></h3>
+                    </button>
+              </div>
+            </div>
+        <!-- </div> -->
     </section>
     <section class="section contact">
         <div class="overlay">
@@ -146,20 +186,31 @@
 
     <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
     <script>
-        var macy = Macy({
-            container: '#gallery-container',
-            trueOrder: false,
-            waitForImages: false,
-            margin: 24,
-            columns: 4,
-            breakAt: {
-                940: 3,
-                520: 2,
-                400: 1
-            }
-        });
         AOS.init();
+        const config2 = {
+            type: "loop",
+            gap: '1rem',
+            autoplay: 1,
+            interval: 3000,
+            classes: {
+                    arrows: 'splide__arrows your-class-arrows',
+                    arrow : 'splide__arrow your-class-arrow',
+                    prev  : 'splide__arrow--prev your-class-prev',
+                    next  : 'splide__arrow--next your-class-next',
+            },
+            perPage: 4,
+            perMove: 1,
+            breakpoints: {
+                768: {
+                    perPage: 1,
+                    gap: 0,
+                }
+            }
+        }
+        new Splide( '.splide2', config2).mount();
     </script>
 
 </body>
