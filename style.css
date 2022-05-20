@@ -245,6 +245,9 @@ header{
 
 
 .gallery{
+    position: relative;
+    width: 100%;
+    height: auto;
     background: rgb(5, 5, 60);
 }
 .gallery h1{
@@ -342,6 +345,13 @@ footer{
 
 @media (max-width: 768px) {
 
+    .nav-logo{
+        width: 80px;
+    }
+    .logo-title{
+        font-size: 1.25rem;
+    }
+
     .section{
         padding: 0rem;
     }
@@ -424,6 +434,11 @@ footer{
     }
     .container-desc{
         font-size: 1rem;
+    }
+
+
+    .splide__slide, .gallery-img{
+        width: 90vw;
     }
 
     footer p{
