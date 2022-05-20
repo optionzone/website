@@ -345,6 +345,9 @@ footer{
 
 @media (max-width: 768px) {
 
+    header{
+        padding: 1rem;
+    }
     .nav-logo{
         width: 80px;
     }
