@@ -94,7 +94,7 @@ header{
     width: 100%;
     height: auto;
     padding: 1rem 2rem;
-    background: #FFF;
+    background: #000;
     box-shadow: 2px 0 8px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: row;
@@ -105,14 +105,14 @@ header{
 .nav-logo{
     position: relative;
     align-self: center;
-    width: 120px;
+    width: 100px;
     height: auto;
     object-fit: contain;
 }
 .logo-title{
     font-family: 'Orbitron', sans-serif;
     margin-left: 2rem;
-    color: var(--primcolor);
+    color: gold;
 }
 
 
@@ -131,15 +131,24 @@ header{
     width: 55vw;
 }
 .hero-container h1{
-    color: #2929b1;
+    color: goldenrod;
 }
 .hero-container p{
-    color: #1b1b8b;
+    color: goldenrod;
 }
 .hero-right{
     width: 45vw;
     height: 60vh;
-    background: url('./img/heroimg.png') center/contain no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: url('./img/heroimg.png') center/contain no-repeat; */
+}
+.hero-anim{
+    position: relative;
+    width: 500px;
+    height: 500px;
 }
 .hero-heading{
     font-family: 'Roboto', sans-serif;
@@ -163,7 +172,7 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background: var(--primcolor);
+    background: goldenrod;
     color: #FFF;
     font-weight: 500;
     border-radius: 28px;
@@ -173,7 +182,7 @@ header{
     color: #FFF;
 }
 .main-btn:hover{
-    background: blue !important;
+    background: rgb(163, 121, 13) !important;
     transform: scaleX(1.05);
 }
 
@@ -202,6 +211,12 @@ header{
 
 
 
+.features{
+    background: linear-gradient(180deg, #000, rgb(5,5,60));
+}
+.features .section-heading{
+    color: gold;
+}
 .features-container{
     margin-top: 2rem;
     flex-wrap: wrap;
@@ -245,10 +260,10 @@ header{
     position: relative;
     width: 100%;
     height: auto;
-    background: rgb(5, 5, 60);
+    background: linear-gradient(180deg, #000, rgb(5, 5, 60));
 }
 .gallery h1{
-    color: #FFF;
+    color: gold;
 }
 .gallery-img{
     width: 280px;
@@ -369,6 +384,10 @@ footer{
     }
     .hero-desc{
         font-size: 1rem;
+    }
+
+    .hero-anim{
+        width: 100vw;
     }
 
     .features-item{
