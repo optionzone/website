@@ -120,7 +120,6 @@ header{
     position: relative;
     width: 100%;
     height: auto;
-    background: url('./img/herobg.jpg') center/cover no-repeat;
 }
 .hero-container{
     background-color: #FFF;
@@ -367,7 +366,8 @@ footer{
         padding: 1rem;
     }
     .nav-logo{
-        width: 80px;
+        width: 60px;
+        margin-right: -1rem;
     }
     .logo-title{
         font-size: 1.25rem;
@@ -383,6 +383,9 @@ footer{
 
     .hero{
         height: 100vh;
+    }
+    .hero-container{
+        padding-top: 4rem;
     }
     .hero-heading{
         font-size: 1.9rem;
@@ -425,7 +428,8 @@ footer{
 
     .aboutus{
         padding-top: 6rem;
-        height: 130vh;
+        height: auto;
+        clip-path: polygon(0% 0%, 50% 5%, 100% 0%, 100% 100%, 0% 100%);
     }
     .about-right{
         position: relative;
