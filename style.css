@@ -56,7 +56,7 @@ a{
     text-align: left;
     font-size: 2.6rem;
     font-family: 'Roboto', sans-serif;
-    color: #daa520;
+    color: #fec107;
 }
 .container-desc{
     position: relative;
@@ -129,10 +129,10 @@ header{
     width: 55vw;
 }
 .hero-container h1{
-    color: goldenrod;
+    color: #fec107;
 }
 .hero-container p{
-    color: goldenrod;
+    color: #fec107;
 }
 .hero-right{
     width: 45vw;
@@ -170,7 +170,7 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background: goldenrod;
+    background: #fec107;
     color: #FFF;
     font-weight: 500;
     border-radius: 28px;
@@ -216,7 +216,7 @@ header{
     background-size: cover;
 }
 .features .section-heading{
-    color: #FFF;
+    color: #fec107;
 }
 .features-container{
     margin-top: 2rem;
