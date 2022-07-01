@@ -455,10 +455,7 @@ footer{
     }
 
     .hero{
-        height: 100vh;
-    }
-    .hero-container{
-        padding-top: 4rem;
+        height: auto;
     }
     .hero-heading{
         font-size: 1.9rem;
@@ -496,6 +493,10 @@ footer{
     }
     .devices{
         width: 80vw;
+    }
+
+    .partner-card{
+        width: 100%;
     }
     
 
