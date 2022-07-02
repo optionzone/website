@@ -58,7 +58,7 @@ a{
     text-align: left;
     font-size: 2.6rem;
     font-family: 'Roboto', sans-serif;
-    color: #EBDD1F;
+    color: #f5d416;
 }
 .container-desc{
     position: relative;
@@ -118,14 +118,14 @@ header{
 .nav-logo{
     position: relative;
     align-self: center;
-    width: 100px;
+    width: 80px;
     height: auto;
     object-fit: contain;
 }
 .logo-title{
     font-family: 'Roboto', sans-serif;
-    margin-left: 2rem;
-    color: gold;
+    margin-left: 1rem;
+    color: #f5d416;
 }
 
 
@@ -142,10 +142,10 @@ header{
     width: 55vw;
 }
 .hero-container h1{
-    color: #ebdd1f;
+    color: #f5d416;
 }
 .hero-container p{
-    color: #EBDD1F;
+    color: #f5d416;
 }
 .hero-right{
     width: 45vw;
@@ -183,7 +183,7 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background: #c9af38;
+    background: #ef213d;
     color: #FFF;
     font-weight: 500;
     border-radius: 28px;
@@ -227,10 +227,10 @@ header{
 
 
 .features{
-    background: #FFF url('./img/featuresbg.jpg') bottom/cover no-repeat;
+    background: #FFF url('./img/featuresbg.jpg') center/cover no-repeat;
 }
 .features .section-heading{
-    color: #EBDD1F;
+    color: #ef213d;
 }
 .features-container{
     margin-top: 2rem;
@@ -366,7 +366,7 @@ header{
     padding: 1rem;
 }
 .partners .section-heading{
-    color: #EBDD1F;
+    color: #f5d416;
 }
 
 .partners-wrapper{
@@ -482,6 +482,11 @@ footer{
         font-size: 1rem;
     }
 
+    .main-btn{
+        width: 100%;
+        font-size: .9rem;
+    }
+
     .hero-anim{
         width: 100vw;
     }
@@ -498,6 +503,9 @@ footer{
         padding: 0;
     }
 
+    .poster{
+        padding: 1rem;
+    }
     .tagline{
         font-size: 1.2rem;
     }
@@ -509,7 +517,7 @@ footer{
         justify-content: center;
     }
     .devices{
-        width: 80vw;
+        width: 100%;
     }
 
     .partner-card{
@@ -522,6 +530,12 @@ footer{
         height: auto;
         clip-path: polygon(0% 0%, 50% 5%, 100% 0%, 100% 100%, 0% 100%);
     }
+    .aboutus-container{
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .about-right{
         position: relative;
         width: 100%;
@@ -529,6 +543,9 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    .about-anim{
+        left: unset;
     }
     .about-img{
         position: relative;
@@ -560,6 +577,9 @@ footer{
     }
 
 
+    .gallery{
+        padding-top: 1rem;
+    }
     .splide__slide, .gallery-img{
         width: 90vw;
     }
