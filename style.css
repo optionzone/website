@@ -58,7 +58,7 @@ a{
     text-align: left;
     font-size: 2.6rem;
     font-family: 'Roboto', sans-serif;
-    color: #f5d416;
+    color: #3AB0FF;
 }
 .container-desc{
     position: relative;
@@ -125,7 +125,7 @@ header{
 .logo-title{
     font-family: 'Roboto', sans-serif;
     margin-left: 1rem;
-    color: #f5d416;
+    color: #dbf10d;
 }
 
 
@@ -142,10 +142,10 @@ header{
     width: 55vw;
 }
 .hero-container h1{
-    color: #f5d416;
+    color: #3AB0FF;
 }
 .hero-container p{
-    color: #f5d416;
+    color: #3AB0FF;
 }
 .hero-right{
     width: 45vw;
@@ -168,6 +168,9 @@ header{
     text-align: left;
     color: #FFF;
 }
+.small-title{
+    font-size: 2rem;
+}
 .hero-desc{
     margin-top: 1rem;
     font-size: 1.5rem;
@@ -176,14 +179,14 @@ header{
 }
 .main-btn{
     position: relative;
-    margin-top: 4rem;
+    margin-top: 2rem;
     width: 80%;
     padding: 1rem 1.5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background: #ef213d;
+    background: #e00522;
     color: #FFF;
     font-weight: 500;
     border-radius: 28px;
@@ -199,28 +202,47 @@ header{
 
 
 .poster{
-    height: auto;
-    background: url('./img/posterbg.png') center/cover no-repeat;
+    position: relative;
+    padding: 1rem;
+    height: 110vh;
+    background: url('./img/posterbg.jpg') center/cover no-repeat;
+    background-attachment: fixed;
     color: #FFF;
 }
+.poster-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    background: linear-gradient(160deg, #02008ebb, #4c005cab);
+}
 .poster-container{
-    margin-top: 4rem;
+    position: relative;
+    margin-top: 0rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 .poster-right{
+    position: relative;
     width: 50%;
     text-align: end;
     padding-right: 4rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 .poster-right .main-btn{
     width: auto;
 }
 .devices{
     position: relative;
-    width: 500px;
+    width: 70%;
 }
 
 
@@ -230,7 +252,7 @@ header{
     background: #FFF url('./img/featuresbg.jpg') center/cover no-repeat;
 }
 .features .section-heading{
-    color: #ef213d;
+    color: #3AB0FF;
 }
 .features-container{
     margin-top: 2rem;
@@ -323,6 +345,9 @@ header{
     align-items: center;
     justify-content: space-between;
 }
+.aboutus .main-btn{
+    background-color: #3AB0FF;
+}
 .about-anim{
     position: relative;
     left: 8vw;
@@ -366,7 +391,7 @@ header{
     padding: 1rem;
 }
 .partners .section-heading{
-    color: #f5d416;
+    color: #3AB0FF;
 }
 
 .partners-wrapper{
@@ -467,15 +492,17 @@ footer{
         padding: 0rem;
     }
     .section-heading{
-        margin-top: 2rem;
         font-size: 2rem;
     }
 
     .hero{
         height: auto;
     }
+    .small-title{
+        font-size: 1.25rem;
+    }
     .hero-heading{
-        font-size: 1.9rem;
+        font-size: 3.6rem;
         text-align: center;
     }
     .hero-desc{
@@ -487,6 +514,9 @@ footer{
         font-size: .9rem;
     }
 
+    .hero-right{
+        height: auto;
+    }
     .hero-anim{
         width: 100vw;
     }
@@ -504,10 +534,15 @@ footer{
     }
 
     .poster{
-        padding: 1rem;
+        height: 130vh;
     }
     .tagline{
         font-size: 1.2rem;
+    }
+    .poster-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .poster-right{
         width: 100%;
@@ -524,6 +559,13 @@ footer{
         width: 100%;
     }
     
+    .features{
+        background: rgb(198, 243, 243);
+        padding: 2rem 0;
+    }
+    .features .section-heading{
+        font-size: 2.4rem;
+    }
 
     .aboutus{
         padding-top: 6rem;
@@ -551,26 +593,6 @@ footer{
         position: relative;
         width: 150px;
         box-shadow: none;
-    }
-    .img1{
-        top: 0;
-        left: 0;
-        display: none;
-    }
-    .img2{
-        top: 0;
-        right: 0;
-        display: none;
-    }
-    .img3{
-        width: 100%;
-        top: unset;
-        left: unset;
-    }
-    .img4{
-        bottom: 0;
-        right: 0;
-        display: none;
     }
     .container-desc{
         font-size: 1rem;
