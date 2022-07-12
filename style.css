@@ -97,34 +97,6 @@ a{
 }
 
 
-header{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    padding: .5rem 2rem;
-    background: #222222;
-    box-shadow: 2px 0 8px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    z-index: 10;
-}
-.nav-logo{
-    position: relative;
-    align-self: center;
-    width: 5rem;
-    height: auto;
-    object-fit: contain;
-}
-.logo-title{
-    font-weight: 700;
-    margin-left: 0;
-    color: gold;
-}
-
 
 .hero{
     position: relative;
@@ -146,6 +118,11 @@ header{
     height: 100vh;
     background: rgba(0, 0, 0, 0.6);
     color: #FFF;
+    text-align: center;
+}
+.hero-logo{
+    position: relative;
+    width: 10rem;
 }
 .hero-left{
     width: 55vw;
@@ -153,9 +130,6 @@ header{
 .hero-title{
     font-size: 4rem;
     font-weight: 600;
-    color: #fec107;
-}
-.hero-container p{
     color: #fec107;
 }
 .hero-right{
@@ -180,9 +154,10 @@ header{
     color: #FFF;
 }
 .hero-desc{
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    text-align: left;
+    margin: 1rem auto;
+    max-width: 60%;
+    font-size: 1.2rem;
+    text-align: center;
     color: #FFF;
 }
 .main-btn{
@@ -204,7 +179,7 @@ header{
     color: #FFF;
 }
 .main-btn:hover{
-    background: rgb(163, 121, 13) !important;
+    background: #fec107 !important;
     transform: scaleX(1.05);
 }
 
@@ -285,6 +260,21 @@ header{
 .features-item--desc{
     text-align: center;
 }
+
+
+.course-wrapper{
+    position: relative;
+    padding: 2rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: blanchedalmond;
+}
+
+
 
 
 .gallery{
@@ -475,6 +465,7 @@ footer{
         text-align: center;
     }
     .hero-desc{
+        max-width: 80%;
         font-size: 1rem;
     }
 
@@ -484,6 +475,13 @@ footer{
 
     .features-item{
         margin: 1rem 0;
+    }
+
+    .course-wrapper{
+        flex-direction: column;
+    }
+    .course-content{
+        margin-bottom: 5vh;
     }
 
     .horizontal{
